@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Initialize observers for various components
-    createObserver('.tip-card, .service-card, .pros, .cons');
+    // Initialize observers
+    createObserver('.tip-card, .service-card, .pros, .cons, .stat-card');
     
     // Image Gallery Interaction
     document.querySelectorAll('.lifestyle-gallery img').forEach(img => {
@@ -91,4 +91,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Contact Form Handling
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            alert(`Thank you ${formData.name}! Your message has been sent.`);
+            e.target.reset();
+        });
+    }
 });
