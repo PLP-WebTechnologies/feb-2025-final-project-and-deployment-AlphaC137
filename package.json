@@ -1,0 +1,15 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "Ecommerce 3 page Website for power learn project final project",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css", "javascript"],
+  "author": "Sydwell Lebeloane",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}

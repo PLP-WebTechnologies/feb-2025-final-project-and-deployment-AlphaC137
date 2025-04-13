@@ -1,65 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sydwell's Blog | Home</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/enhanced-styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SA Fasion - Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo">Sydwell Lebeloane</h1>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <a href="index.html" class="logo">SA FASION</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="cart-icon">
+            <i class="fas fa-basket-shopping"></i>
+            <span class="cart-count">0</span>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="container">
-        <section class="featured-post">
-            <article>
-                <h2>Latest Post: Web Development Journey</h2>
-                <p class="post-meta">Posted on Febuary 15, 2025</p>
-                <p>Follow along in my Power Learn Project Journey in web development including database integration, cool CSS techniques, and more...</p>
-                <a href="PLPJourney.html" class="read-more">Read More</a>
-            </article>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover Your Unique Style</h1>
+        <p>
+          Shop the latest trends in South African fashion with free shipping on
+          all orders over R500
+        </p>
+        <a href="#featured" class="btn">Shop Now</a>
+      </div>
+    </section>
 
-        <section class="blog-posts">
-            <article class="post-card">
-                <h3>How it is living in South Africa</h3>
-                <p class="post-meta">Posted on Febuary 25, 2025</p>
-                <p>Learn how it really is living in South Africa...</p>
-                <a href="sa.html" class="read-more">Read More</a>
-            </article>
+    <section class="featured" id="featured">
+      <h2 class="section-title">
+        <i>From the Heart of South Africa, Straight to You</i>
+      </h2>
+    </section>
 
-            <article class="post-card">
-                <h3>Tech Startups to Watch</h3>
-                <p class="post-meta">Posted on January 5, 2024</p>
-                <p>Understandingnew StartUps & Spotlight on Phoenix 32...</p>
-                <a href="startups.html" class="read-more">Read More</a>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Sydwell Lebeloane. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://za.linkedin.com/in/alpha-sydwell-lebeloane">LinkedIn</a>
-                <a href="https://github.com/AlphaC137">GitHub</a>
-            </div>
+    <!-- Slider Section -->
+    <div class="slider-container">
+      <div class="slides">
+        <div class="slide">
+          <img
+            src="https://kayibizalounge.wordpress.com/wp-content/uploads/2019/07/89731515_1610778092379271_3439278324508000256_o-e1591988854159.jpg?w=720&h=312&crop=1"
+            alt="Skhothane"
+          />
         </div>
+        <div class="slide">
+          <img
+            src="https://i.ytimg.com/vi/UT0k1LxGRO8/maxresdefault.jpg"
+            alt="Summer Collection"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://robertomorino.africa/wp-content/uploads/2022/04/fabio-black-formal-shoes-mens-980x654.jpg"
+            alt="SA Top leather shoes"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://cdn.prod.website-files.com/643c4850bfd19558937c851e/650ee24fd22e2bc3f8205d3b_377542685_1058133878963421_7704678052346969559_n.jpeg"
+            alt="RSA Street wear"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://bubblegumclub.co.za/wp-content/uploads/2021/10/image-1-1024x619.jpg"
+            alt="Lexicon of Fashion"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://marketplace-images.asos.com/user/14d630df-948f-4241-ba86-2e10cded42cf_large.jpg"
+            alt="ASOS"
+          />
+        </div>
+      </div>
+      <button class="arrow prev">❮</button>
+      <button class="arrow next">❯</button>
+      <div class="slider-nav">
+        <div class="slider-dot active"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+      </div>
+    </div>
+
+    <!-- Featured Products -->
+    <section class="featured" id="featured">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="products">
+        <!-- Product 1 -->
+        <div class="product">
+          <img
+            src="https://i.pinimg.com/736x/66/a7/aa/66a7aafdd15ce99786206432a6e6f44b.jpg"
+            alt="Basotho Blankets"
+          />
+          <div class="product-info">
+            <h3 class="product-title">Basotho Blanket</h3>
+            <p class="product-category">Men's Clothing</p>
+            <p class="product-price">R399.99</p>
+            <button
+              class="add-to-cart"
+              data-id="1"
+              data-name="Basotho Blanket"
+              data-price="399.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+          <img
+            src="https://i.pinimg.com/736x/be/68/10/be68106e949b0726883d18c796bf5c13.jpg"
+            alt="Female Zulu attire"
+          />
+          <div class="product-info">
+            <h3 class="product-title">Zulu Female Full Attire</h3>
+            <p class="product-category">Women's Clothing</p>
+            <p class="product-price">R699.99</p>
+            <button
+              class="add-to-cart"
+              data-id="2"
+              data-name="Zulu Female Full Attire"
+              data-price="699.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+          <img
+            src="https://i.pinimg.com/736x/a4/07/2a/a4072aa414eb9b3c1a8700d0677db2c8.jpg"
+            alt="Mandela Fit"
+          />
+          <div class="product-info">
+            <h3 class="product-title">The Mandi Fit</h3>
+            <p class="product-category">Men's Clothing</p>
+            <p class="product-price">R999.99</p>
+            <button
+              class="add-to-cart"
+              data-id="3"
+              data-name="The Mandi Fit"
+              data-price="999.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+          <img
+            src="https://i.pinimg.com/736x/25/f3/9d/25f39dfc9edcae318093e786de259ef2.jpg"
+            alt="Phansula Clothing"
+          />
+          <div class="product-info">
+            <h3 class="product-title">Pantsula Full Fit</h3>
+            <p class="product-category">Children Clothing</p>
+            <p class="product-price">R1 899.99</p>
+            <button
+              class="add-to-cart"
+              data-id="4"
+              data-name="Pantsula Full Fit"
+              data-price="1899.99"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>
+        Get the latest updates on new arrivals, special promotions, and styling
+        tips delivered straight to your inbox.
+      </p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input
+          type="email"
+          placeholder="Your email address"
+          required
+          id="email-input"
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#">Men's Collection</a></li>
+            <li><a href="#">Women's Collection</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.bing.com/ck/a?!&&p=41603bcb88a294e628f1adffed779e0cc53687d564cb928a43fd73b790617980JmltdHM9MTc0NDI0MzIwMA&ptn=3&ver=2&hsh=4&fclid=36d67551-8546-612b-3563-609a84336013&psq=instagram+alphasydwell&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9hbHBoYV9uZWd0ZWFjdXAzNy8&ntb=1"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.bing.com/ck/a?!&&p=316c3600bc02852104110c195b10b851efcde8f46ea7ca580d0f54f94bf89ff2JmltdHM9MTc0NDI0MzIwMA&ptn=3&ver=2&hsh=4&fclid=36d67551-8546-612b-3563-609a84336013&psq=linkedin+sydwell+lebeloane&u=a1aHR0cHM6Ly96YS5saW5rZWRpbi5jb20vaW4vYWxwaGEtc3lkd2VsbC1sZWJlbG9hbmU&ntb=1"
+                >Linkedin</a
+              >
+            </li>
+            <li><a href="https://github.com/AlphaC137/">Github</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Sydwell Lebeloane. All Rights Reserved.</p>
+      </div>
     </footer>
 
-    <!-- Theme Toggle -->
-    <button id="theme-toggle" class="theme-btn">🌓</button>
-
-    <script src="javascript/script.js"></script>
-</body>
+    <!-- Modal Popup -->
+    <div class="modal" id="cart-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+          <!-- Cart items will be added here dynamically -->
+        </div>
+        <div id="cart-total">
+          <p>Total: R<span id="total-price">0.00</span></p>
+        </div>
+        <button class="btn" style="margin-top: 1rem">Checkout</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
